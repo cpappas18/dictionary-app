@@ -26,12 +26,12 @@ Users are able to:
 <img src="./screenshots/desktop-dark.png" alt="Desktop Dark Screenshot">
 
 ### Tablet
-<img src="./screenshots/tablet-light.png" alt="Tablet Light Screenshot" width="300">
-<img src="./screenshots/tablet-dark.png" alt="Tablet Dark Screenshot" width="300">
+<img src="./screenshots/tablet-light.png" alt="Tablet Light Screenshot" width="400">
+<img src="./screenshots/tablet-dark.png" alt="Tablet Dark Screenshot" width="400">
 
 ### Mobile
-<img src="./screenshots/mobile-light.png" alt="Mobile Light Screenshot" width="200">
-<img src="./screenshots/mobile-dark.png" alt="Mobile Dark Screenshot" width="200">
+<img src="./screenshots/mobile-light.png" alt="Mobile Light Screenshot" width="300">
+<img src="./screenshots/mobile-dark.png" alt="Mobile Dark Screenshot" width="300">
 
 ## Links
 
