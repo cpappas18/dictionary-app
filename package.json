@@ -2,7 +2,7 @@
   "name": "dictionary-app",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://cpappas18/github.io/dictionary-app",
+  "homepage": "https://cpappas18.github.io/dictionary-app/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
