@@ -1,0 +1,150 @@
+@use '../globals';
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    margin: 2.5rem 0;
+}
+
+.hm {
+    font-size: 1.5rem;
+}
+
+.hs {
+    font-size: 1.25rem;
+}
+
+.grey {
+    color: globals.$grey;
+    font-weight: normal;
+}
+
+p {
+    margin: 0.5rem auto;
+}
+
+.content {
+    & > div:last-child.synonyms, & > div:last-child.antonyms {
+        h3, ul {
+            margin: 0;
+        }
+    }
+}
+
+.meaning {
+    li {
+        padding-left: 1rem;
+
+        .example {
+            color: globals.$grey;
+        }
+    
+        &::marker {
+            color: globals.$purple;
+        }
+    
+        &:not(:last-child) {
+            margin-bottom: 0.813rem;
+        }
+    }
+}
+
+.part-of-speech {
+    line-height: 0.2rem;
+    border-bottom: 1px solid globals.$light-grey;  
+
+    span {
+        background-color: white;
+        padding-right: 1rem; 
+    }
+}
+
+.synonyms, .antonyms {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1.5rem;
+
+    ul {
+        padding: 0;
+        list-style: none;
+        display: inherit;
+        column-gap: inherit;
+    }
+
+    li {
+        color: globals.$purple;
+        font-weight: bold;
+    }
+}
+
+.source {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 0.875rem;
+    align-items: center;
+    column-gap: 1rem;
+    border-top: 1px solid globals.$light-grey;
+    padding-top: 1rem;
+    margin-top: 2rem;
+   
+    a:not(.icon) {
+        text-decoration: none;
+        color: globals.$light-black;
+    }
+    
+    h4 {
+        color: globals.$grey;
+        font-weight: normal;
+    }
+
+    h4, p {
+        width: fit-content;
+        margin: 0rem;
+        border-bottom: 1px solid globals.$light-grey;
+    }
+}
+
+.dark {
+    h1, h2, li p {
+        color: white;
+    }
+
+    .part-of-speech {
+        border-bottom-color: globals.$lightest-black;
+
+        span {
+            background-color: black;
+            color: white;
+        }
+    }
+
+    .source {
+        border-top-color: globals.$lightest-black;
+
+        p {
+            color: white;
+        }
+
+        h4, p {
+            border-bottom-color: globals.$lightest-black;
+        }
+    }
+}
+
+@media screen and (max-width: globals.$mobile-breakpoint) {
+    .meaning {
+        ul {
+            padding-left: 1rem;
+        }
+    }
+
+    .source {
+        a:first-child{
+            width: 100%;
+        }
+    }
+}
